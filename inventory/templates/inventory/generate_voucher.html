@@ -1,0 +1,23 @@
+{% extends 'registration/base.html' %}
+{% block content %}{{ block.super }}
+    <div class="row ">
+        <div class="login_container">
+            <div class="form-group text-center">
+
+                <div class="col-xs-2">
+        <label for="ex1">col-xs-2</label>
+        <input class="form-control" id="ex1" type="text">
+      </div>
+      <div class="col-xs-3">
+        <label for="ex2">col-xs-3</label>
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      <div class="col-xs-4">
+        <label for="ex3">col-xs-4</label>
+        <input class="form-control" id="ex3" type="text">
+      </div>
+        {#        <p> New User <a href="{% url 'signup' %}">SignUp</a></p>#}
+            </div>
+        </div>
+    </div>
+{% endblock %}

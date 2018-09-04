@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<html>
+<head>
+	{% block title %}<title>SJAB</title>{% endblock title %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+
+			<div class="text-center ">
+
+                    <h1 class="main_title">St. John Ambulance Brigade</h1>
+
+			</div>
+
+		</div>
+
+	</div>
+	<div class="content container">
+
+        {% block content %}
+            <div class="well-sm btn-group">
+            <a href="{% url 'home' %}" class="btn btn-info">
+          <span class="glyphicon glyphicon-home"></span> Home
+        </a>
+    <a class="btn btn-info" href="{% url 'additem' %}">Add New Item</a>
+    <a class="btn btn-info" href="{% url 'voucherlist' %}">Vouchers</a>
+    </div>
+        {% endblock %}
+
+	</div>
+</body>
+</html>

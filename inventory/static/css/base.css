@@ -1,0 +1,21 @@
+.header{
+	background-color: #26426f;
+}
+.main_title{
+	color: white;
+
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.post-form textarea, .post-form  {
+    width: 100%;
+}
+.login_container{
+    margin-top: 10%;
+    border: 1px solid #8ba7d3;
+}
+
